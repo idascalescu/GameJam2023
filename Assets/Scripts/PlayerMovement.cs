@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        spriteRend= GetComponent<SpriteRenderer>();
+        spriteRend = GetComponent<SpriteRenderer>();
     }
 
     void Start()
@@ -92,6 +92,10 @@ public class PlayerMovement : MonoBehaviour
             //rb.constraints = RigidbodyConstraints2D.FreezeAll;
             isGrounded = true;
             isStuck = true;
+        }
+        if(collision.gameObject.CompareTag(""))
+        {
+
         }
     }
 

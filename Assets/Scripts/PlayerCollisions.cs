@@ -35,12 +35,12 @@ public class PlayerCollisions : MonoBehaviour
             Destroy(collision.gameObject);
             score++;
         }
-       /* if(collision.gameObject.tag == ("LevelOneOver"))
+        if (collision.gameObject.tag == ("LevelOneOver"))
         {
-            *//*winMessage.SetText("Well Done !");*//*
+            winMessage.SetText("Well Done !");
             SceneManager.LoadScene("GameScene");
             Debug.Log("GG");
-        }*/
+        }
     }
 
     private void SetScore()
